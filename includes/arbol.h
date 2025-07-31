@@ -21,14 +21,15 @@ class Nodo{
 };
 
 class Arbol{
-    Nodo *head;
-
     public:
+        Nodo *head;
         Arbol(){
             head = nullptr;
         }
         void cargarMagos(string);
-        void insertar(Mago, Nodo *, Nodo *);
+        void insertar(Mago, Nodo *&, Nodo *);
+        void buscarNodo(Nodo *, Mago);
+        void mostrar(int, Nodo *);
 };
 
 #endif
